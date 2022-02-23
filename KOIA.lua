@@ -891,10 +891,10 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 1421137574 then
+if tonumber(msg.sender.user_id) == 2140356312 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 1421137574 then
+elseif tonumber(msg.sender.user_id) == 2140356312 then
 msg.Name_Controller = 'مطور السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
@@ -2588,7 +2588,7 @@ data = {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
 {
-{text = '『 𝗦𝗢𝗨𝗥𝗖𝗘 𝗞𝗔𝗗𝗜』', url = 't.me/IE7IE'},
+{text = '『 𝗦𝗢𝗨𝗥𝗖𝗘 𝗞𝗔𝗗𝗜』', url = 't.me/sourcesezar'},
 },
 }
 }
@@ -2665,7 +2665,7 @@ if chat_type(msg.chat_id) == "GroupBot" and Redis:sismember(TheKOIA.."KOIA:ChekB
 Redis:incr(TheKOIA..'KOIA:Num:Message:User'..msg.chat_id..':'..msg.sender.user_id) 
 if text == "ايدي" and msg.reply_to_message_id == 0 then
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(TheKOIA..'KOIA:Channel:Join')}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/sourcesezar'..Redis:get(TheKOIA..'KOIA:Channel:Join')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n᥀︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end 
 if not Redis:get(TheKOIA.."KOIA:Status:Id"..msg_chat_id) then
