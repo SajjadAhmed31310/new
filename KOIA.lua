@@ -148,9 +148,9 @@ Managers = Redis:sismember(TheKOIA.."KOIA:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheKOIA.."KOIA:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheKOIA.."KOIA:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1421137574 then
+if UserId == 2140356312 then
 Status = 'مبرمج السورس'
-elseif UserId == 1421137574 then
+elseif UserId == 2140356312 then
 Status = 'مطور السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
@@ -560,7 +560,7 @@ end
 function Total_message(Message)  
 local MsgText = ''  
 if tonumber(Message) < 100 then 
-MsgText = 'تفاعل محلو 😤' 
+MsgText = 'تفاعل محلو شبيك تخاف تدز رسالة 😤' 
 elseif tonumber(Message) < 200 then 
 MsgText = 'تفاعلك ضعيف ليش'
 elseif tonumber(Message) < 400 then 
