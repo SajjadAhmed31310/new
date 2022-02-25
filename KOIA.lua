@@ -223,7 +223,7 @@ end
 local reply_markupp = LuaTele.replyMarkup{
 type = 'inline',
 data = {
-,{
+{
 {text = '- تغيير معلومات المجموعه : '..(t1 or change_info), data = UserId..'/groupNum1//'..user2}, 
 },
 {
